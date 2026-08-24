@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 
 // 1. Create Context
-export const ThemeContext = createContext();
+const ThemeContext = createContext();
 
 // 2. Initial state
 const initialState = {
