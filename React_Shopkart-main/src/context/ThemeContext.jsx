@@ -15,28 +15,24 @@ function themeReducer(state, action) {
   console.log("Action received:", action);
 
   switch (action.type) {
-    case "TOGGLE_THEME":
-      console.log("TOGGLE_THEME case is running");
+    case "TOGGLE_THEME": {
 
-      const newTheme =
-        state.theme === "light" ? "dark" : "light";
+      const newTheme = state.theme === "light" ? "dark" : "light";
 
       console.log("New Theme:", newTheme);
 
       return {
         theme: newTheme,
       };
+    }
   }
 }
 
-// 
+//
 export function ThemeProvider({ children }) {
   console.log("ThemeProvider function is running");
-  
-  const [state, dispatch] = useReducer(
-    themeReducer,
-    initialState
-  );
+
+  const [state, dispatch] = useReducer(themeReducer, initialState);
 
   console.log("Current Theme:", state.theme);
 

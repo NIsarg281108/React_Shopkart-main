@@ -1,10 +1,5 @@
-import { useState } from 'react'
-import Navbar from './Components/Navbar';
-import { Form, Outlet, RouterProvider } from 'react-router-dom';
+import {  RouterProvider } from 'react-router-dom';
 import router from './Pages/router';
-import Home from './Pages/Home';
-import Products from './Pages/Products';
-import Layout from './common/Layout';
 import { ThemeProvider } from "./context/ThemeContext";
 import { CartProvider } from "./Pages/CardContext";
 import ErrorFallBack from './Pages/ErrorFallBack';
