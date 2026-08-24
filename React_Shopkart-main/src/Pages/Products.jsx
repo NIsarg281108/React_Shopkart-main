@@ -28,7 +28,7 @@ function Products() {
           title={item.title}
           price={item.price}
           image={item.image}
-          onclick={() => handleClick(item.title)}
+          onClick={() => handleClick(item.title)}
         />
       ))}
     </div>
